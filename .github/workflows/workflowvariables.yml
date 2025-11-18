@@ -15,6 +15,10 @@ jobs:
         Greeting: Hello
     steps:
       - name: "alexa"
-        run: echo "$cloud, $Greeting, $wow"
+        run: echo "$cloud, $Greeting, $wow, &gig"
         env:
            wow: fubutsu
+      - name: "gigs"
+        run: echo "$gig, $wow"
+        env: 
+           gig: gigitty
